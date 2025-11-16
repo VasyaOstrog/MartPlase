@@ -1,3 +1,33 @@
 {
-  "users" : []
+  "users" : [
+    {
+      "id" : 1,
+      "name" : "Василь Петров",
+      "email" : "vasyavalchevskiy@gmail.com",
+      "balance" : 2500.75
+    },
+    {
+      "id" : 2,
+      "name" : "Мария Иванова",
+      "email" : "",
+      "balance" : 1800.00
+    },
+    {
+      "id" : 3,
+      "name" : "Георги Георгиев",
+      "email" : ""
+    },
+    {
+      "id" : 4,
+      "name" : "Елена Димитрова",
+      "email" : "",
+      "balance" : 320.50
+    },
+    {
+      "id" : 5,
+      "name" : "Anastasia Gorshenina",
+      "email" : "gorseninaanstasia",
+      "balance" : 323.50
+    }
+  ]
 }
