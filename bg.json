@@ -5,6 +5,16 @@
       "name" : "Василь Петров",
       "email" : "vasyavalchevskiy@gmail.com",
       "balance" : 2500.75
-    }
+    },
+    {
+      "id" : 2,
+      "name" : "Мария Иванова",
+      "email" : "",
+      "balance" : 1800.00
+    },
+    {
+      "id" : 3,
+      "name" : "Георги Георгиев",
+      "email" : ""}
   ]
 }
