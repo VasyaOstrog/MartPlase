@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Портфоліо — Вася</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		:root{--accent:#2b8cff;--muted:#6b7280}
+		body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;color:#111;background:#f7fafc;padding:24px}
+		.card{max-width:900px;margin:20px auto;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(16,24,40,0.08);overflow:hidden}
+		.header{display:flex;gap:20px;align-items:center;padding:28px}
+		.avatar{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:32px}
+		.meta h1{margin:0;font-size:20px}
+		.meta p{margin:6px 0 0;color:var(--muted)}
+		.content{display:grid;grid-template-columns:1fr 320px;gap:28px;padding:0 28px 28px}
+		section{Padding:18px;border-radius:8px}
+		.about{background:linear-gradient(180deg,#fff,#fbfdff)}
+		.skills{background:#fff}
+		.skill{margin-bottom:12px}
+		.skill .row{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-bottom:6px}
+		.bar{height:12px;background:#e6eefc;border-radius:999px;overflow:hidden}
+		.bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7c3aed);border-radius:999px}
+		.sidebar{display:flex;flex-direction:column;gap:16px}
+		.contact{background:#fff;padding:14px}
+		a.button{display:inline-block;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+		@media (max-width:880px){.content{grid-template-columns:1fr}.header{flex-direction:row;gap:14px}.avatar{width:72px;height:72px}}
+	</style>
+</head>
+<body>
+	<main class="card v" role="main">
+		<header class="header">
+			<div class="avatar" aria-hidden="true">В</div>
+			<div class="meta">
+				<h1>Василь Острог — Frontend / Full‑stack</h1>
+				<p>Я створюю інтуїтивні інтерфейси та прості бекенди. Люблю JavaScript, Python та чисту архітектуру.</p>
+			</div>
+		</header>
+
+		<div class="content">
+			<div>
+				<section class="about">
+					<h2>Про мене</h2>
+					<p>Привіт! Я — веб-розробник з досвідом у створенні SPA та серверної логіки. Маю досвід роботи з React, Node.js, та Python. Шукаю цікаві проєкти та співпрацю.</p>
+					<h3>Ключові навички</h3>
+					<ul>
+						<li>Розробка SPA (React, Vue)</li>
+						<li>Node.js та REST/GraphQL API</li>
+						<li>Автоматизація тестування та CI/CD</li>
+						<li>Чистий код і рефакторинг</li>
+					</ul>
+				</section>
+
+				<section class="skills">
+					<h2>Мови програмування</h2>
+					<div class="skill">
+						<div class="row"><span>JavaScript / TypeScript</span><span>90%</span></div>
+						<div class="bar"><i style="width:90%"></i></div>
+					</div>
+					<div class="skill">
+						<div class="row"><span>Python</span><span>75%</span></div>
+						<div class="bar"><i style="width:75%"></i></div>
+					</div>
+					<div class="skill">
+						<div class="row"><span>HTML & CSS</span><span>88%</span></div>
+						<div class="bar"><i style="width:88%"></i></div>
+					</div>
+					<div class="skill">
+						<div class="row"><span>C# / Java (базово)</span><span>45%</span></div>
+						<div class="bar"><i style="width:45%"></i></div>
+					</div>
+				</section>
+			</div>
+
+			<aside class="sidebar">
+				<div class="contact">
+					<h3>Контакти</h3>
+					<p style="margin:6px 0">Email: <a href="mailto:vasya@example.com">vasya@example.com</a></p>
+					<p style="margin:6px 0">GitHub: <a href="#">github.com/vasya</a></p>
+					<p style="margin:6px 0">Телефон: +380 00 000 00 00</p>
+					<p style="margin:10px 0 0"><a class="button" href="#">Завантажити резюме</a></p>
+				</div>
+
+				<div class="contact">
+					<h3>Мови</h3>
+					<p>Українська (рідна)</p>
+					<p>Англійська (B2)</p>
+				</div>
+
+				<div class="contact">
+					<h3>Проєкти</h3>
+					<ul>
+						<li><strong>Маркетплейс</strong> — frontend, оплати, інтеграції</li>
+						<li><strong>API сервіс</strong> — Node.js + PostgreSQL</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+	</main>
+</body>
+</html>
+
